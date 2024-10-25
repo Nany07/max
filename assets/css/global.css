@@ -3,3 +3,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 
+/* colors */
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(45deg,#9b34ef 0%,#490cb0 20%,
+      transparent 50%);
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(90deg,#5516ba,rgba(255, 0, 229, 0.5) 80%);
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
+  }
+
+    /* Custom Scroll */
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+  }
+
+  body{
+    background: var(--primary-color);    
+    text-align: center;
+    color: var(--text-color);
+    font-family: Raleway;
+  }
+
+  img{
+    max-width: 100%;
+  }
+  
+  a{
+    color: var(--link-color);
+    text-decoration: none;
+  }
+
+  footer p{
+    color: var(--tertiary-color);
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header img {
+    width: 9rem;
+  }
+  
+  .upper {
+    text-transform: uppercase;
+  }
+
+  .access img {
+    width: 20rem;
+    padding: 1rem;
+  }
+
+  #content {
+    margin-bottom: 3rem;
+    margin-top: 10rem;
+  }
+
+  footer div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  footer p {
+    font-size: .7rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  footer div a {
+    padding: 0rem 0.6rem;
+  }
+  
+  footer :is(h5,h6){
+    margin-bottom: 0.5rem ;
+  }
+
+  footer div:last-of-type{
+    margin-top: 2rem ;
+  }
+
+  #footer-icons img {
+    width: 1rem;
+  }
+  
+  /* #footer-icons img:last-of-type {
+    height: 1rem;
+  }
+     */

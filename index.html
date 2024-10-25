@@ -1,14 +1,14 @@
 <!-- TODO -->
  <!DOCTYPE html>
- <html lang="br-pt">
+ <html lang="pt-br">
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Max</title>
  </head>
  <body>
-    <header>
+    <header class="menu">
         <a href="index.html" class="logo-image" target="_self">
              <img src="/assets/images/hbo-logo.svg" alt="logo da Max">
         </a>
@@ -17,7 +17,7 @@
             entrar
             </h4>
         </a>
-        <button onclick="window.location.href='#subscription';" class=" upper" id="header-btn"  ></button>
+        <button onclick="window.location.href='#subscription';" class=" upper" id="header-btn"  >Assine Agora</button>
     </header>
     <main>
         <section class="cover sections" id="cover_id">
@@ -33,20 +33,19 @@
             <div id="bar">
 
             </div>
-            <div id="price">Assinaturas a partir de
-
-                R$14,15 /mês*</div>
+            <p>Assinaturas a partir de</p>
+            <p><strong>$14,15</strong> /mês*</p>
             <button onclick="window.location.href='#subscription';"  class="btn-general btn-price upper">Assine Agora</button>
-            <p>
+            <p class="text-small">
                 *aplicável ao plano anual com o pagamento antecipado.
             </p>
         </section>
         <section class="subscription sections" id="payment">
             <h2>Conheça nossos planos e economize na assinatura trimestral ou anual com o pagamento antecipado.</h2>
-            <div class="plans">
-                <div class="tables">
-                    Mobile
-                    <p>R$ 19,90 /mês</p>
+            <div class="plan">
+                <div class="card">
+                    <h3>Mobile</h3>
+                    <p><strong>R$ 19,90</strong> /mês</p>
                     <ul class="list">
                         <li>Aproveite em smartphones e tablets, onde quiser.</li>
                         <li>Assista em 1 tela por vez.</li>
@@ -55,9 +54,9 @@
                     </ul>
                     <button class="btn-plans btn-general upper">escolher o plano Mobile</button>
                 </div>
-                <div class="tables">
-                    Multitelas
-                    <p>R$ 27,90 /mês</p>
+                <div class="card">
+                    <h3>Multitelas</h3>
+                    <p><strong>R$ 27,90 </strong>/mês</p>
                     <ul class="list">
                         <li>Aproveite em todos os seus dispositivos.</li>
                         <li>Chromecast e Airplay disponíveis.</li>
@@ -70,7 +69,7 @@
                 </div>
             </div>
         </section>
-        <section class="access sections" id="access_id">
+        <section class="access sections" id="content">
             <h2>Descubra novos universos</h2>
             <div class="gallery">
                 <img src="assets/images/hbo-default_0.webp" alt="Conteúdo da HBO" class="exhibition-image">
@@ -83,28 +82,28 @@
         </section>
     </main>
     <footer>
-        <div id="footer-link" class="upper purple-letter">
-            <a href="https://www.hbomax.com/br/pt/sitemap"><h3>Agora na HBO Max</h3></a>
-            <a href="https://www.hbomax.com/br/pt/coming-soon"><h3>Em breve</h3></a>
-            <a href="https://www.hbomax.com/br/pt/feature"><h3>Filme em destaque</h3></a>
-            <a href="https://www.hbomax.com/br/pt/series"><h3>Séries</h3></a> 
-            <a href="https://help.hbomax.com/br"><h3>Ajuda</h3></a>
-
-        </div>
-        <p id="footer-copyright" class="purple-letter">
-            © 2022 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. HBO Max é usado sob licença.
+        <div id="footer-link" class="upper">
+            <a href="https://www.hbomax.com/br/pt/sitemap"><h6>Agora na HBO Max</h6></a>
+            <a href="https://www.hbomax.com/br/pt/coming-soon"><h6>Em breve</h6></a>
+            <a href="https://www.hbomax.com/br/pt/feature"><h6>Filme em destaque</h6></a>
+            <a href="https://www.hbomax.com/br/pt/series"><h6>Séries</h6></a> 
+            <a href="https://help.hbomax.com/br"><h6>Ajuda</h6></a>
+        </div>  
+        <p id="footer-copyright" >
+            
+                © 2022<small> WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. HBO Max é usado sob licença.</small>
         </p>
         <div id="footer-icons">
-            <a href="https://www.facebook.com/HBOMaxBr/" class="footer-image-icon">
+            <a href="https://www.facebook.com/HBOMaxBr/" >
                 <img src="assets/images/fb_0.png" alt="Link do perfil no facebook">
             </a>
-            <a href="https://twitter.com/HBOMaxBR" class="footer-image-icon">
+            <a href="https://twitter.com/HBOMaxBR" >
                 <img src="assets/images/twitter_0.png" alt="Link do perfil no X">
             </a>
-            <a href="https://www.instagram.com/hbomaxbr/" class="footer-image-icon">
+            <a href="https://www.instagram.com/hbomaxbr/" >
                 <img src="assets/images/instagram_0.png" alt="Link do perfil do instagram">
             </a>
-            <a href="https://www.youtube.com/c/hbomaxbr" class="footer-image-icon">
+            <a href="https://www.youtube.com/c/hbomaxbr" >
                 <img src="assets/images/youtube_0.png" alt="LInk do perfil no youtube">
             </a>
         </div>

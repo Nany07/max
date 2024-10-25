@@ -1,4 +1,81 @@
-body{
-    background: black;
-    color: white;
+@import url('global.css');
+
+#bar{
+    background: var(--divider-bg-color);
+    width: 10rem;
+    height: 2rem;
+    border-radius: 8px;
 }
+
+.cover p:first-of-type{
+    margin-bottom: 0;
+}
+
+.cover p:nth-of-type(2){
+    margin-top: 0;
+}
+
+.cover strong {
+    font-size: 2.3rem;
+}
+
+.text-small{
+    font-size: smaller;
+    /* max-width: 300px; */
+    text-align: center;
+}
+
+.subscription h2{
+    font-size: 1.9rem;
+    padding: 2rem;
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: start;
+    gap: 4rem;
+}
+
+.card {
+    width: 25rem;
+    background:var(--card-bg-color);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card ::marker{
+    content: '+ ';
+    font-size: 2rem;
+}
+
+.card p{
+    text-align: end;
+}
+
+.card strong{
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+    }
+
+.plan h3{
+    margin: 1rem 2rem 0;
+    font-weight: bolder ;
+    /* font-size: 1.5rem; */
+}
+
+.plan p{
+    margin: 0 0 1rem;
+}
+
+.access img {
+    width: 20rem;
+    padding: 1rem;
+}
+
+#content {
+    margin-bottom: 3rem;
+    margin-top: 10rem;
+}
+
