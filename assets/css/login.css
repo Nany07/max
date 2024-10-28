@@ -1,1 +1,38 @@
 @import url('global.css');
+
+.login-section {
+    background: var(--form-bg-color);
+    width: 50rem;
+    height: 22rem;
+    border-radius: 10px;
+    margin: auto;
+    padding: 1rem 2rem;
+}
+
+.form_{
+    display: grid;
+    grid-template-rows: 6;
+    justify-content: start;
+}
+
+main {
+    background: url(../images/background-movies-series.png);
+    object-fit: cover;
+    object-position: center;
+}
+
+form{
+    background: var(--form-field-br-color);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+input{
+    background: var(--form-field-br-color);
+    padding: .4rem 2rem;
+    border-radius: 1rem;
+}

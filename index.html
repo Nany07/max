@@ -8,19 +8,20 @@
     <title>Max</title>
  </head>
  <body>
-    <header class="menu">
+    <nav class="menu">
         <a href="index.html" class="logo-image" target="_self">
-             <img src="/assets/images/hbo-logo.svg" alt="logo da Max">
+             <img src="assets/images/hbo-logo.svg" alt="logo da Max">
         </a>
-        <a href="/login.html" target="_self">
-            <h4 class="upper">
-            entrar
-            </h4>
-        </a>
-        <button onclick="window.location.href='#subscription';" class=" upper" id="header-btn"  >Assine Agora</button>
-    </header>
-    <main>
-        <section class="cover sections" id="cover_id">
+        <div>
+            <a href="/login.html" target="_self">
+                <h4 class="upper">
+                entrar
+                </h4>
+            </a>
+            <button onclick="window.location.href='#subscription';" class=" upper" id="header-btn"  >Assine Agora</button>
+        </div>
+    </nav>
+    <header>
             <div class="icons">
                 <img src="assets/images/hbo.png" alt="Logo da HBO" class="icon">
                 <img src="assets/images/dc.png" alt="Logo da DC" class="icon">
@@ -28,18 +29,20 @@
                 <img src="assets//images/cartoon-network_neutral.png" alt="logo da Cartoon Neutral" class="icon">
                 <img src="assets/images/max_originals.png" alt="Logo da Max Originals" class="icon">
             </div>
-            <h1 class="upper">Curta as melhores histórias</h1>
-            <h1 class="upper" id="title1">Para todo mundo</h1>
+            <h1 class="upper" >
+                <span class="lighter">Curta as melhores histórias</span><br>
+                Para todo mundo
+            </h1>
             <div id="bar">
-
             </div>
             <p>Assinaturas a partir de</p>
             <p><strong>$14,15</strong> /mês*</p>
             <button onclick="window.location.href='#subscription';"  class="btn-general btn-price upper">Assine Agora</button>
-            <p class="text-small">
+            <p class=" note text-small">
                 *aplicável ao plano anual com o pagamento antecipado.
             </p>
-        </section>
+    </header>
+    <main>
         <section class="subscription sections" id="payment">
             <h2>Conheça nossos planos e economize na assinatura trimestral ou anual com o pagamento antecipado.</h2>
             <div class="plan">
@@ -109,4 +112,4 @@
         </div>
     </footer>
  </body>
- </html>
+ </html>    
