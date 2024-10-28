@@ -8,6 +8,13 @@
     align-items: center;
 }
 
+header::after{
+    content:'';
+    display: flex;
+    width: 100%;
+    height: 6rem;
+   }  
+
 header{
     /* background: linear-gradient(transparent,var(--tertiary-color)); */
 }
@@ -99,6 +106,12 @@ header strong {
     margin-top: 10rem;
 }
 
-button {
-    box-shadow: 90px;
+
+.content-gallery img:hover {
+    border: 2px solid var(--tertiary-color);
+    scale: 1.1 ;
+    transition:.2s ease;
+    
 }
+
+

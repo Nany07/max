@@ -64,13 +64,29 @@
     background: var(--btn-bg-color-gradient);
     border-radius: 70px;
     color: var(--text-color);
-    padding: .7rem 4rem;
+    padding: .7rem 4rem;  
     border: none;
+    
+  }
+
+  .btn-general:hover {
+    background: transparent;
+    border: 1px solid var(--secondary-color);
+    transition-duration: 4s;
   }
 
   #btn-nav{
+    background-color: var(--tertiary-color);
     padding: 0 3rem;
     margin: 1rem;
+    font-weight: bold;
+  }
+
+  #btn-nav:hover{
+    background:  var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+    transition-duration: .2s;
+    border: none;
   }
 
   img{
@@ -128,7 +144,7 @@
     width: 1rem;
   }
   
-  /* #footer-icons img:last-of-type {
-    height: 1rem;
-  }
-     */
+ header::after{
+  width: 100%;
+  height: 4rem;
+ }
