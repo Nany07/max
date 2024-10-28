@@ -9,7 +9,7 @@
     --secondary-color: #ff00e5;
     --tertiary-color: #b535f6;
     --btn-bg-color-gradient: linear-gradient(45deg,#9b34ef 0%,#490cb0 20%,
-      transparent 50%);
+      transparent 120%);
     --btn-link-bg-color: #fff;
     --btn-link-color: #000;
     --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
@@ -60,10 +60,17 @@
       flex-direction: row;
       gap:2rem
   }
-  button{
+  .btn-general{
     background: var(--btn-bg-color-gradient);
-    border-radius: 10px;
+    border-radius: 70px;
     color: var(--text-color);
+    padding: .7rem 4rem;
+    border: none;
+  }
+
+  #btn-nav{
+    padding: 0 3rem;
+    margin: 1rem;
   }
 
   img{

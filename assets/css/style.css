@@ -1,18 +1,5 @@
 @import url('global.css');
-nav {
-    align-items: center;
-    width: 100%;
-    background: var(--nav-bg-color);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
 
-nav div {
-    display: flex;
-    flex-direction: row;
-    gap:2rem
-}
 
 .icons{
     display:grid;
@@ -112,3 +99,6 @@ header strong {
     margin-top: 10rem;
 }
 
+button {
+    box-shadow: 90px;
+}

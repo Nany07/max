@@ -6,13 +6,14 @@
     height: 22rem;
     border-radius: 10px;
     margin: auto;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
 }
 
 .form_{
     display: grid;
     grid-template-rows: 6;
     justify-content: start;
+    text-align: start;
 }
 
 main {
@@ -29,10 +30,13 @@ form{
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    padding-top: 2rem;
 }
 
 input{
     background: var(--form-field-br-color);
-    padding: .4rem 2rem;
+    padding: .7rem 40rem 5px 20px;
     border-radius: 1rem;
+    color:var(--form-field-placeholder);
+    border: 1px solid var(--text-color);
 }
