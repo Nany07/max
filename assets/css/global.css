@@ -71,6 +71,7 @@
   .btn-general:hover {
     background: transparent;
     border: 1px solid var(--secondary-color);
+    cursor: pointer;
     transition: .4s ease;
   }
 
