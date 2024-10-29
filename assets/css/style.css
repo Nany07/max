@@ -70,6 +70,11 @@ header strong {
     background:var(--card-bg-color);
     border-radius: 10px;
     padding: 1rem;
+    transition: transform 0.7s ease-in-out;
+}
+
+.card p{
+    text-align: end;
 }
 
 .card ::marker{
@@ -77,14 +82,28 @@ header strong {
     font-size: 2rem;
 }
 
-.card p{
-    text-align: end;
-}
-
 .card strong{
     font-size: 1.6rem;
     color: var(--secondary-color);
     }
+
+.card:last-of-type:hover{
+    transform: matrix3d(
+        1, 0, 0, -0.0007,
+        0, 1, 0, 0,
+        0, 0, 1, 0,
+        0, 0, 0, 1
+);
+}
+
+.card:first-of-type:hover{
+        transform:matrix3d(
+        1, 0, 0, 0.0007,
+        0, 1, 0, 0,
+        0, 0, 1, 0,
+        0, 0, 0, 1
+);
+}
 
 .plan h3{
     margin: 1rem 2rem 0;
@@ -96,22 +115,74 @@ header strong {
     margin: 0 0 1rem;
 }
 
-.access img {
-    width: 20rem;
-    padding: 1rem;
-}
-
-#content {
+.content-gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     margin-bottom: 3rem;
     margin-top: 10rem;
 }
 
+.content-gallery img {
+    width: 20rem;
+    padding: 1rem;
+    transition: opacity 0.3s ease;
+}
 
 .content-gallery img:hover {
     border: 2px solid var(--tertiary-color);
-    scale: 1.1 ;
+    /* scale: .9 ; */
     transition:.2s ease;
-    
+    opacity: 0; 
 }
 
+.content-gallery div{
+    position: relative;
+    overflow: hidden;
+}
 
+.content-gallery div:nth-child(1):hover{
+    background: url("../images/hbo-hover_0.webp");
+    background-size: cover;
+}
+
+.content-gallery div:nth-child(1):hover{
+    background: url("../images/hbo-hover_0.webp");
+    background-size: cover;
+}
+
+.content-gallery div:nth-child(2):hover{
+    background: url("../images/MAX-Hover.webp");
+    background-size: cover;
+}
+
+.content-gallery div:nth-child(3):hover{
+    background: url("../images/DC-Hover.webp");
+    background-size: cover;
+}
+
+.content-gallery div:nth-child(4):hover{
+    background: url("../images/WB-Hover.webp");
+    background-size: cover;
+}
+
+.content-gallery div:nth-child(5):hover{
+    background: url("../images/CN-Hover.png");
+    background-size: cover;
+}
+.content-gallery div:nth-child(6):hover{
+    background: url("../images/UCL-Hover.webp");
+    background-size: cover;
+}
+
+.btn-general:hover{
+    scale: 1.03 ;
+}
+
+.btn-card{
+    margin: 1rem 1rem 1rem 1.6rem;
+}
+
+#btn-card--margin{
+    margin-top: 4rem;
+}

@@ -66,13 +66,12 @@
     color: var(--text-color);
     padding: .7rem 4rem;  
     border: none;
-    
   }
 
   .btn-general:hover {
     background: transparent;
     border: 1px solid var(--secondary-color);
-    transition-duration: 4s;
+    transition: .4s ease;
   }
 
   #btn-nav{
@@ -144,7 +143,4 @@
     width: 1rem;
   }
   
- header::after{
-  width: 100%;
-  height: 4rem;
- }
+ 
