@@ -48,6 +48,9 @@
     font-family: Raleway;
   }
   nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     background: var(--nav-bg-color);
@@ -55,6 +58,11 @@
     top: 0;
     z-index: 1000;
   }
+
+  nav img {
+    width: 10rem;
+  }
+  
   nav div {
       display: flex;
       flex-direction: row;
@@ -102,15 +110,7 @@
     color: var(--tertiary-color);
   }
 
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  nav img {
-    width: 10rem;
-  }
+  
   
   .upper {
     text-transform: uppercase;
@@ -144,4 +144,22 @@
     width: 1rem;
   }
   
+  @media screen and (max-width:470px) {
+    nav{
+      flex-direction: column;
+    }
+    footer div:first-of-type {
+      flex-direction: column;
+    }
+    /* footer div a {
+      padding: 0rem 0rem;
+    }
+    
+    footer :is(h5,h6){
+      margin-bottom: 0rem ;
+    } */
+    #btn-price{
+      animation: wiggle 1s linear infinite;
+  }
+  }
  
