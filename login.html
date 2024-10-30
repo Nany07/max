@@ -18,7 +18,7 @@
                 entrar
                 </h4>
             </a>
-            <button  onclick="window.location.href='#subscription';" class=" upper btn-general" id="btn-nav"  >Assine Agora</button>
+            <button  onclick="window.location.href='/index.html#subscription';" class=" upper btn-general" id="btn-nav"  >Assine Agora</button>
         </div>
     </nav>
     <main>
@@ -27,10 +27,12 @@
             <div class="form_">
                 <p class="">Você tem uma conta da HBO Max?</p>
                 <form action="" method="post">
-                    <input type="email" name=""  id="" placeholder="Endereço de e-mail"><br><br>
-                    <input type="password" name="" id="" placeholder="Senha">
+                    <label for="e-mail" required></label>
+                    <input type="email" name="e-mail"  id="" placeholder="Endereço de e-mail"><br><br>
+                    <label for="pass" required></label>
+                    <input type="password" minlength="8" name="pass"id="" placeholder="Senha">
                 </form>
-                <div class="buttons">
+                <div class="btn-links">
                     <button class="btn-general upper" >Entrar</button>
                     <a href="login.html">
                         <p id="forgot-password "class=""><strong>Esqueceu a Senha?</strong></p>

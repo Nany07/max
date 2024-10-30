@@ -1,21 +1,5 @@
 @import url('global.css');
 
-.login-section {
-    background: var(--form-bg-color);
-    width: 50rem;
-    height: 22rem;
-    border-radius: 10px;
-    margin: auto;
-    padding: 1rem 3rem;
-}
-
-.form_{
-    display: grid;
-    grid-template-rows: 6;
-    justify-content: start;
-    text-align: start;
-}
-
 main {
     background: url(../images/background-movies-series.png);
     object-fit: cover;
@@ -24,19 +8,53 @@ main {
 
 form{
     background: var(--form-field-br-color);
+    width: 100%;
 }
 
-.buttons{
+.login-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    background: var(--form-bg-color);
+    width: 60%;
+    height: 22rem;
+    border-radius: 10px;
+    margin: auto;
+    padding: 1rem 3rem;
+}
+
+.login-section h2{
+    align-self: center;
+}
+
+.btn-links{
     display: flex;
     flex-direction: row;
     gap: 1rem;
     padding-top: 2rem;
 }
 
+.form_{
+    width: 100%;
+}
+
 input{
     background: var(--form-field-br-color);
-    padding: .7rem 40rem 5px 20px;
-    border-radius: 1rem;
-    color:var(--form-field-placeholder);
-    border: 1px solid var(--text-color);
+    padding: .7rem 1rem .7rem 1rem;
+    border-radius: 5px;
+    color:var(--text-color);
+    border: 1px solid var(--form-field-placeholder);
+    width: 100%;
+    max-width: 41.8rem;
+}   
+
+input::placeholder{
+    color: var(--form-field-placeholder);
+    
+}   
+input:invalid{
+    border: 1px solid var(--form-field-error);
 }
+

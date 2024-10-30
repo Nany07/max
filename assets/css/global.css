@@ -101,13 +101,22 @@
     max-width: 100%;
   }
   
-  a{
+  nav a{
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  footer a{
     color: var(--link-color);
     text-decoration: none;
   }
 
+  footer a:hover{
+    color: var(--text-color);
+  }
+
   footer p{
-    color: var(--tertiary-color);
+    color: var(--link-color);
   }
 
   
@@ -137,11 +146,15 @@
   }
 
   footer div:last-of-type{
-    margin-top: 2rem ;
+    margin: 3rem 0 2rem ;
   }
 
   #footer-icons img {
     width: 1rem;
+  }
+
+  #footer-icons a:nth-child(1) img {
+    width: .6rem;
   }
   
   @media screen and (max-width:470px) {
@@ -151,13 +164,7 @@
     footer div:first-of-type {
       flex-direction: column;
     }
-    /* footer div a {
-      padding: 0rem 0rem;
-    }
-    
-    footer :is(h5,h6){
-      margin-bottom: 0rem ;
-    } */
+
     #btn-price{
       animation: wiggle 1s linear infinite;
   }

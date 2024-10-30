@@ -46,18 +46,18 @@ header::after{
 
 #bar{
     background: var(--divider-bg-color);
-    width: 0%;
+    width: 40%;
     height: .3rem;
     border-radius: 8px;
     margin: auto;
 }
 
-.cover p:first-of-type{
+header p:first-of-type{
     margin-bottom: 0;
 }
 
-.cover p:nth-of-type(2){
-    margin-top: 0;
+header p:nth-of-type(2){
+    margin: 0 1rem 2rem;
 }
 
 header strong {
@@ -65,10 +65,11 @@ header strong {
 }
 
 .text-small{
-    font-size:1rem;
+    font-size:.8rem;
+    margin-top: 2rem;
 }
 
-.subscription h2{
+.payment h2{
     font-size: 1.9rem;
     padding: 2rem;
 }
@@ -131,24 +132,26 @@ header strong {
     margin: 0 0 1rem;
 }
 
+.content{
+    margin-top: 10rem;
+}
+
 .content-gallery{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-bottom: 3rem;
-    margin-top: 10rem;
+    margin: 1rem 0 3rem;
+    gap: 2.5rem;
 }
 
 .content-gallery img {
     width: 20rem;
-    padding: 1rem;
-    transition: opacity 0.3s ease;
+    transition: opacity .7s ease;
 }
 
 .content-gallery img:hover {
-    border: 2px solid var(--tertiary-color);
-    /* scale: .9 ; */
-    transition:.2s ease;
+    border: 5px solid var(--tertiary-color);
+    transition:.7s ease;
     opacity: 0; 
 }
 
@@ -157,38 +160,50 @@ header strong {
     overflow: hidden;
 }
 
-.content-gallery div:nth-child(1):hover{
-    background: url("../images/hbo-hover_0.webp");
-    background-size: cover;
-}
 
 .content-gallery div:nth-child(1):hover{
     background: url("../images/hbo-hover_0.webp");
     background-size: cover;
+    scale: 1.05 ;
+    transition: opacity .7s ease;
 }
 
 .content-gallery div:nth-child(2):hover{
     background: url("../images/MAX-Hover.webp");
     background-size: cover;
+    scale: 1.05 ;
+    transition: opacity .7s ease;
 }
 
 .content-gallery div:nth-child(3):hover{
     background: url("../images/DC-Hover.webp");
     background-size: cover;
+    scale: 1.05 ;
+    transition: opacity .7s ease;
 }
 
 .content-gallery div:nth-child(4):hover{
     background: url("../images/WB-Hover.webp");
     background-size: cover;
+    scale: 1.05 ;
+    transition: opacity .7s ease;
 }
 
 .content-gallery div:nth-child(5):hover{
     background: url("../images/CN-Hover.png");
     background-size: cover;
+    scale: 1.05 ;
+    transition: opacity .7s ease;
 }
 .content-gallery div:nth-child(6):hover{
     background: url("../images/UCL-Hover.webp");
     background-size: cover;
+    scale: 1.05 ;
+    transition: opacity .7s ease;
+}
+
+#btn-price{
+    font-weight: bold;
 }
 
 .btn-general:hover{
